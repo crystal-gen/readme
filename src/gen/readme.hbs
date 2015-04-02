@@ -1,3 +1,22 @@
 # {{{@name}}} v{{@version}}
 
 {{@description}}
+
+{{#each @doc.chapters}}
+
+{{#if chapter.title}}
+# {{chapter.title}}
+
+{{/if}}
+{{#chapter.pages}}
+{{#if page.title}}
+## {{page.title}}
+
+{{/if}}
+{{#if page.content.md}}
+{{{page.content.md}}}
+
+{{/if}}
+
+{{/chapter.pages}}
+{{/each}}
