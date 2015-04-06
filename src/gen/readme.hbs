@@ -4,7 +4,8 @@
 # {{{@name}}} v{{@version}}
 {{/if}}
 
-{{@description}}
+
+{{#if name}}{{{name}}}{{else}}{{{@name}}}{{/if}} is an {{@description}}.
 
 {{#each @doc.chapters}}
 

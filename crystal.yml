@@ -12,6 +12,8 @@ gen:
   file:
     readme:
       dest: README.md
+    name:
+      type: string
     title:
       type: string
       
