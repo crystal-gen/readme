@@ -13,13 +13,15 @@ gen:
     readme:
       dest: README.md
   spec:
+    is_a_vowel:
+      type: string
     image_alt:
       type: string
     image_src:
       type: string
     image_url:
       type: string
-    name:
+    short_name:
       type: string
     title:
       type: string

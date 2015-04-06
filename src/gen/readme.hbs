@@ -8,7 +8,11 @@
 [![image_alt]({{{image_src}}})]({{{image_url}}})
 {{/if}}
 
-{{#if name}}{{{name}}}{{else}}{{{@name}}}{{/if}} is an {{@description}}.
+{{#if short_name}}
+{{{short_name}}} is a{{#if is_a_vowel}}n{{/if}} {{@description}}.
+{{else}}
+{{@description}}
+{{/if}}
 
 {{#each @doc.chapters}}
 
