@@ -4,6 +4,9 @@
 # {{{@name}}} v{{@version}}
 {{/if}}
 
+{{#if image_src}}
+[![image_alt]({{{image_src}}})]({{{image_url}}})
+{{/if}}
 
 {{#if name}}{{{name}}}{{else}}{{{@name}}}{{/if}} is an {{@description}}.
 

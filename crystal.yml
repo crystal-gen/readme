@@ -12,6 +12,13 @@ gen:
   file:
     readme:
       dest: README.md
+  spec:
+    image_alt:
+      type: string
+    image_src:
+      type: string
+    image_url:
+      type: string
     name:
       type: string
     title:
