@@ -8,24 +8,30 @@ author:
   url: http://studiotate.com
 copyright: 2015 Studio Tate
 
-gen:
-  file:
+dependencies:
+  configurations:
+    project: latest
+  schematics:
+    doc:
+      schema: doc
+      version: latest
+
+src:
+  gen:
     readme:
       dest: README.md
-  spec:
-    is_a_vowel:
-      type: string
-    image_alt:
-      type: string
-    image_src:
-      type: string
-    image_url:
-      type: string
-    short_name:
-      type: string
-    title:
-      type: string
-      
-generators:
-  project:
-    version: latest
+  schema:
+    type: object
+    properties:
+      is_a_vowel:
+        type: boolean
+      image_alt:
+        type: string
+      image_src:
+        type: string
+      image_url:
+        type: string
+      short_name:
+        type: string
+      title:
+        type: string

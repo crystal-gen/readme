@@ -14,21 +14,15 @@
 {{@description}}
 {{/if}}
 
-{{#each @doc.chapters}}
+{{#each doc}}
 
-{{#if chapter.title}}
-# {{{chapter.title}}}
+# {{{@key}}}
 
-{{/if}}
-{{#chapter.pages}}
-{{#if page.title}}
-## {{{page.title}}}
-
-{{/if}}
-{{#if page.content.md}}
-{{{page.content.md}}}
+{{#if this.pages}}
+{{#if title}}
+## {{{title}}}
 
 {{/if}}
 
-{{/chapter.pages}}
+{{/if}}
 {{/each}}
