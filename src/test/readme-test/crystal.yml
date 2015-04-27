@@ -4,4 +4,12 @@ description: readme test
 
 generators:
   readme:
+    spec:
+      badges:
+      - name: npm version
+        image: https://badge.fury.io/js/crystal.svg
+        url: http://badge.fury.io/js/crystal
+      - name: Build Status
+        image: https://travis-ci.org/studiotate/crystal-js.svg?branch=master
+        url: https://travis-ci.org/studiotate/crystal-js
     version: latest
